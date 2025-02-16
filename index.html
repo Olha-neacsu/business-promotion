@@ -4,62 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business promotion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&family=Inter:opsz,wght@14..32,500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
+
   <body>
-    <header>
-      <a href="./index.html">
+    <header class="header">
+      <div class="container">
+      <a href="./index.html" class="logo">
         <img src="./images/logo.svg" alt="logo" width="40" height="36" />
         Product
       </a>
 
-      <nav>
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="Resources"></a></li>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item"><a class="header-nav-link current" href="./index.html">Product</a></li>
+          <li class="header-nav-item"><a class="header-nav-link" href="./pricing.html">Pricing</a></li>
+          <li class="header-nav-item"><a class="header-nav-link" href="./customers.html">Customers</a></li>
+          <li class="header-nav-item"><a class="header-nav-link" href=""Resources></a></li>
         </ul>
       </nav>
 
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
+      <ul class="header-btn-list">
+        <li class="header-btn-item"><button class="header-btn" type="button">Sign In</button></li>
+        <li class="header-btn-item"><button class="header-btn" type="button">Sign Up</button></li>
       </ul>
+      </header>
     </header>
 
     <main>
-      <section>
-        <h1>Work at the speed of thought</h1>
-        <p>
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience. Tools,
-          tutorials, design and innovation experts, all in one place! The most
-          intuitive way to imagine your next user experience.
-        </p>
-        <ul>
-          <li><button type="button"></button></li>
-          <li><button type="button"></button></li>
-        </ul>
-        <img src="./images/hero-img.svg" alt="" width="610" height="555" />
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">Work at the speed of thought</h1>
+          <p class="hero-text">
+            Tools, tutorials, design and innovation experts, all in one place! The
+            most intuitive way to imagine your next user experience. Tools,
+            tutorials, design and innovation experts, all in one place! The most
+            intuitive way to imagine your next user experience.
+          </p>
+          <ul>
+            <li><button type="button" class="hero-btn-start"></button>Get started</li>
+            <li><button type="button" class="hero-btn-video"></button>Watch the Video</li>
+          </ul>
+          <img src="./images/hero-img.svg" alt="" width="610" height="555" />
+        </div>
       </section>
 
-      <section>
-        <h2>Product was Built Specifically for You</h2>
-        <ul>
-          <li>
-            <img src="./images/icon-1.svg" alt="icon1" width="54" height="54" />
-            <h3>First click tests</h3>
-            <p>While most people enjoy casino gambling,</p>
+      <!-- Product  was Built Specifically for You -->
+      <section class="product">
+        <h2 class="product-title">Product was Built Specifically for You</h2>
+        <ul class="product-list">
+          <li class="product-item">
+            <img class="product-image" src="./images/icon-1.svg" alt="icon1" width="54" height="54" />
+            <h3 class="product-subtitle">First click tests</h3>
+            <p class="product-text">While most people enjoy casino gambling,</p>
           </li>
           <li>
-            <img src="./images/icon-2.svg" alt="icon2" width="54" height="54" />
-            <h3>Design surveys</h3>
-            <p>Sports betting, lottery and bingo playing for the fun</p>
+            <img class="product-image" src="./images/icon-2.svg" alt="icon2" width="54" height="54" />
+            <h3 class="product-subtitle">Design surveys</h3>
+            <p class="product-text">Sports betting, lottery and bingo playing for the fun</p>
           </li>
           <li>
-            <img src="./images/icon-3.svg" alt="icon3" width="54" height="54" />
-            <h3>Preference tests</h3>
-            <p>The Myspace page defines the individual.</p>
+            <img class="product-image" src="./images/icon-3.svg" alt="icon3" width="54" height="54" />
+            <h3 class="product-subtitle">Preference tests</h3>
+            <p class="product-text">The Myspace page defines the individual.</p>
           </li>
           <li>
             <img src="./images/icon-4.svg" alt="icon4" width="54" height="54" />
@@ -71,6 +83,7 @@
         <button type="button">Sign up now</button>
       </section>
 
+      <!-- Management -->
       <section>
         <p>Effortless Validation for</p>
         <h2>Management</h2>
@@ -103,9 +116,64 @@
         />
       </section>
 
-      <section></section>
-      <section></section>
+      <!-- Customer Support -->
+      <section>
+        <img
+          src="./images/support-img.svg"
+          alt="support"
+          width="540"
+          height="500"
+        />
+        <p>Easier decision making for</p>
+        <h2>Customer Support</h2>
+        <p>
+          The Myspace page defines the individual, his or her characteristics,
+          traits, personal choices and the overall personality of the person.
+        </p>
+        <ul>
+          <li>Never worry about overpaying for your energy again.</li>
+          <li>
+            We will only switch you to energy companies that we trust and will
+            treat you right
+          </li>
+          <li>We track the markets daily and know where the savings are.</li>
+        </ul>
+      </section>
 
+      <!-- Collaborative -->
+      <section>
+        <p>Optimisation for</p>
+        <h2>Collaborative</h2>
+        <p>
+          Few would argue that, despite the advancements of feminism over the
+          past three decades, women still face a double standard when it comes
+          to their behavior.
+        </p>
+        <ul>
+          <li>
+            <h3>Accessory makers</h3>
+            <p>
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun
+            </p>
+          </li>
+          <li>
+            <h3>Alterationists</h3>
+            <p>
+              If you are looking for a new way to promote your business that
+              won’t cost you more money,
+            </p>
+          </li>
+        </ul>
+        <img
+          src="./images/collaboration-img.svg"
+          alt="collaboration"
+          width="540"
+          height="500"
+        />
+      </section>
+
+      <!-- Process -->
       <section>
         <h2>Quick & Easy Process</h2>
         <p>
@@ -153,8 +221,46 @@
         <button type="button">Contact our expert</button>
       </section>
 
-      <section></section>
+      <!-- Strategies -->
+      <section>
+        <h2>Contents Strategies</h2>
+        <pWe focus on ergonomics and meeting you where you work. It's only a
+        keystroke away. p>
+        <ul>
+          <li>
+            <img
+              src="./images/laptop.png"
+              alt="laptop"
+              width="350"
+              height="186"
+            />
+            <p>By Wahid Ari | 03 March 2019</p>
+            <h3>Increasing Prosperity With Positive Thinking</h3>
+          </li>
+          <li>
+            <img
+              src="./images/people.png"
+              alt="people"
+              width="350"
+              height="186"
+            />
+            <p>By Wahid Ari | 03 March 2019</p>
+            <h3>Motivation Is The First Step To Success</h3>
+          </li>
+          <li>
+            <img
+              src="./images/buildings.png"
+              alt="buildings"
+              width="350"
+              height="186"
+            />
+            <p>By Wahid Ari | 03 March 2019</p>
+            <h3>Success Steps For Your Personal Or Business</h3>
+          </li>
+        </ul>
+      </section>
 
+      <!-- Price Table -->
       <section>
         <h2>Price Table</h2>
         <p>We offer competitive price</p>
@@ -201,6 +307,21 @@
       <section></section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div>
+<a href="./index.html">
+      <a href="./index.html">
+        <img src="./images/logo.svg" alt="logo" width="40" height="36" />
+        Product
+      </a>
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div></footer>
   </body>
 </html>
